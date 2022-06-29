@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>おみくじ１</title>
+
+  <!-- jQueryを使用（しよう）する。ドキュメント全体（ぜんたい）に桜（さくら）を降らせる。 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <script src="js/game1_main1.js"></script>
+  <link rel="icon" href="game1_favicon1.ico">
+  <link rel="stylesheet" href="css/game1_styles1.css">
+</head>
+
+<body>
+  <header>今日の運勢（うんせい）は？</header>
+
+  <div class="omikuji">
+    <p id="btn1">おみくじボタン１</p>
+  </div>
+
+  <!-- jQuery snowfallを使って（つかって）桜（さくら）を降らせる（ふらせる） -->
+  <script src="js/snowfall.jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(document).snowfall({
+        maxSpeed : 5, // 最大速度（さいだい　そくど）
+        minSpeed : 1, // 最小速度（さいしょう　そくど）
+        maxSize  : 20, // 最大サイズ（さいだい　サイズ）
+        minSize  : 1, // 最小サイズ（さいしょう　サイズ）
+        image : "img/sakura_hanabira.png"
+      });
+    });
+  </script>   
+  
+  <footer>
+    <p>桜（さくら）バージョンです！</p>
+  </footer>
+</body>
+
+
+</html>
